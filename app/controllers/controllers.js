@@ -1,14 +1,14 @@
-app.controller('HomeCtrl', function($rootScope, $location)
+app.controller('HomeCtrl', function($scope)
 {
-   $rootScope.activetab = $location.path();
+   $scope.msg = "this is home page";
 });
  
-app.controller('SobreCtrl', function($rootScope, $location)
+app.controller('AboutCtrl', function($scope)
 {
-   $rootScope.activetab = $location.path();
+   $scope.msg = "this is about page";
 });
  
-app.controller('ContatoCtrl', function($rootScope, $location)
+app.controller('ContactCtrl', function($scope)
 {
-   $rootScope.activetab = $location.path();
+   $scope.msg = "this is contact page";
 });

@@ -1,23 +1,16 @@
-<!doctype html>
-<html ng-app="app">
-   <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-      <meta http-equiv="content-language" content="pt-br" />
-      <title>AngularJS: Single Page com ngView e ngRoute</title>
-      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="app">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="content-language" content="pt-br" />
+   <title>Single Page</title>
    </head>
  
    <body>
-      <ul class="nav nav-tabs">
-         <li ng-class="{active: activetab == '/'}"><a href="#/home">Home</a></li>
-         <li ng-class="{active: activetab == '/sobre'}"><a href="#/sobre">Sobre</a></li>
-         <li ng-class="{active: activetab == '/contato'}"><a href="#/contato">Contato</a></li>
-      </ul>
+      <div ui-view></div>
  
-      <div ng-view></div>
- 
-      <script src="app/js/angular.min.js"></script>
-      <script src="app/js/route.min.js"></script>
+      <script src="bower_components/angular/angular.min.js"></script>
+      <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
  
       <script src="app/app.js"></script>
       <script src="app/controllers/controllers.js"></script>

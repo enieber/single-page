@@ -1,0 +1,31 @@
+{
+  "name": "single-page",
+  "version": "0.0.1",
+  "homepage": "https://github.com/enieber/single-page",
+  "authors": [
+    "Enieber <eniebercunha@gmail.com>"
+  ],
+  "description": "single page with Angularjs and ui-router",
+  "main": "index.html",
+  "keywords": [
+    "angular",
+    "ui-router"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular-ui-router": "~0.2.15"
+  },
+  "moduleType": [
+    "amd",
+    "es6",
+    "node",
+    "yui"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
